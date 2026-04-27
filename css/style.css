@@ -229,10 +229,23 @@ video {
 /* Estadísticas y Reseñas */
 .estadisticas, .resenas {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     margin-top: 4rem;
     gap: 2rem;
+}
+
+.estadisticas {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: start;
+    justify-items: center;
+}
+
+.stat {
+    text-align: center;
+    width: 100%;
+    max-width: 240px;
 }
 
 .stat h3 {
