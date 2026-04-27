@@ -227,19 +227,21 @@ video {
 }
 
 /* Estadísticas y Reseñas */
-.estadisticas, .resenas {
+.estadisticas {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: center;
+    justify-items: center;
+    margin-top: 4rem;
+    gap: 2rem;
+}
+
+.resenas {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 4rem;
     gap: 2rem;
-}
-
-.estadisticas {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    align-items: start;
-    justify-items: center;
 }
 
 .stat {
